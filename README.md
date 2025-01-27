@@ -80,7 +80,6 @@ The results column is encoded as :
     test_service: test the flash app
     Docker file: to create docker image
 
-
 ## 5. Instructions on how to run the project
 
     1- create the env as in (2)
