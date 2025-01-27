@@ -43,17 +43,20 @@ pip install seaborn
 pip install scikit-learn
 pip install waitress
 pip install pipenv
-```
 
+
+```
 
 ## 3. Data
+```
+Data is download from the URL https://archive.ics.uci.edu/dataset/327/phishing+websites
 
-    Data is download from the URL [archive.ics.uci.ed](https://archive.ics.uci.edu/dataset/327/phishing+websites)
+```
 
-
-### 3.1 Data Features
+## 3.1 Data Features
 ```
 All data fields are described in data\Phishing Websites Features.pdf
+
 All features are encoded as follows:
 | **Category**   | **Value** |
 |----------------|-----------|
@@ -71,15 +74,16 @@ The results column is encoded as :
 
 ## 4. Notebooks and included files
 ```
-    ml_project.ipynb :  contains <br>
-                            - Data preparation and data cleaning
-                            - EDA, feature importance analysis                        
-                            - Model selection process and parameter tuning                        
-    train.py: selected model traianing and saving to file
-    predecit.py: simple load model and predict
-    app.py: flask app
-    test_service: test the flash app
-    Docker file: to create docker image
+ml_project.ipynb :  contains 
+                        - Data preparation and data cleaning
+                        - EDA, feature importance analysis
+                        - Model selection process and parameter tuning
+train.py: selected model traianing and saving to file
+predecit.py: simple load model and predict
+app.py: flask app
+test_service: test the flash app
+Docker file: to create docker image
+```
 
 ## 5. Instructions on how to run the project
 ```
@@ -89,27 +93,25 @@ The results column is encoded as :
 3- Clone the repo
    https://github.com/aashalabi/ml-zoomcamp-project.git
 4- run flask backend service
-   cd src
-   waitress-serve --port=9696 app:app
+    waitress-serve --port=9696 app:app
 5- Run predict test, open new cmd window , activate the env
    conda activate ml-zoomcamp
-   cd src
    python test_service.py
 ```
 
 ## 6. Build and run through Docker
-
 ```
-    pipenv --python 3.11
-    pipenv install -q scipy
-    pipenv install pandas numpy
-    pipenv install seaborn scikit-learn waitress 
-    pipenv install flask
-    
-    cd src
-    docker build --no-cache -t site_spam_predict:1.0 .
-    docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
-    python test_service.py
+pipenv --python 3.11
+pipenv install -q scipy
+pipenv install pandas numpy
+pipenv install seaborn scikit-learn waitress 
+pipenv install flask
+
+
+docker build --no-cache -t site_spam_predict:1.0 .
+docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
+python test_service.py
+
 ```
 
 ## 7. AWS cloud impelemntation
@@ -118,17 +120,20 @@ The results column is encoded as :
 ![image-2.png](README_files/image-2.png)
 
 ## 7.2 Convert binary model to protocol V4
+```
+It was suggested to used p4 or p5 protocol when saving the model.
+Execute the following to conver the model to v4 protocol
 
-It was suggested to used p4 or p5 protocol when saving the model.<br>
-Execute the following to conver the model to v4 protocol<br>
 python p4_bin_convert.py
+```
 
+
+###
 
 ## 7.3 Detailed AWS implementation and depoloyment
+```
+Check the content of README_AWS.md
 
-
-Check the content of [README_AWS.md](./README_AWS.md)
-
-
+```
 
 
