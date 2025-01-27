@@ -85,7 +85,7 @@ test_service: test the flash app
 Docker file: to create docker image
 ```
 
-## 5. Instructions on how to run the project
+## 5. Instructions on how to run the project locally
 ```
 1- create the env as in (2)
 2- activate the environment
@@ -93,9 +93,11 @@ Docker file: to create docker image
 3- Clone the repo
    https://github.com/aashalabi/ml-zoomcamp-project.git
 4- run flask backend service
+    cd src
     waitress-serve --port=9696 app:app
 5- Run predict test, open new cmd window , activate the env
    conda activate ml-zoomcamp
+   cd src
    python test_service.py
 ```
 
@@ -107,7 +109,7 @@ pipenv install pandas numpy
 pipenv install seaborn scikit-learn waitress 
 pipenv install flask
 
-
+cd src
 docker build --no-cache -t site_spam_predict:1.0 .
 docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
 python test_service.py
