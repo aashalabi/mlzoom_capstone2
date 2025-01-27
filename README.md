@@ -67,7 +67,7 @@ The results column is encoded as :
 | Legitimate     | 1         |
 | Phishing       | -1        |
 
-
+```
 
 ## 4. Notebooks and included files
 ```
@@ -95,7 +95,7 @@ The results column is encoded as :
        conda activate ml-zoomcamp
        cd src
        python test_service.py
-
+```
 
 ## 6. Build and run through Docker
 
