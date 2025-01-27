@@ -98,6 +98,7 @@ The results column is encoded as :
 
 
 ## 6. Build and run through Docker
+
 ```
     pipenv --python 3.11
     pipenv install -q scipy
