@@ -66,7 +66,7 @@ The results column is encoded as :
 | Legitimate     | 1         |
 | Phishing       | -1        |
 
-```
+
 
 ## 4. Notebooks and included files
 
