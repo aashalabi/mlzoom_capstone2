@@ -127,8 +127,8 @@ python p4_bin_convert.py
 ###
 
 ## 7.3 Detailed AWS implementation and depoloyment
-```markdown
-Check the content of [README_AWS.md](README_AWS.md)
+```
+Check the content of [README_AWS.md]:(README_AWS.md)
 
 
 
