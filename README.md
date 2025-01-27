@@ -50,7 +50,23 @@ pip install pipenv
 ## 3. Data
 ```
 Data is download from the URL https://archive.ics.uci.edu/dataset/327/phishing+websites
+```
 
+3.1 Data Features
+```
+All data fields are described in data\Phishing Websites Features.pdf
+All features are encoded as follows:
+| **Category**   | **Value** |
+|----------------|-----------|
+| Legitimate     | 1         |
+| Suspicious     | 0         |
+| Phishing       | -1        |
+
+The results column is encoded as :
+| **Category**   | **Value** |
+|----------------|-----------|
+| Legitimate     | 1         |
+| Phishing       | -1        |
 ```
 
 ## 4. Notebooks and included files
