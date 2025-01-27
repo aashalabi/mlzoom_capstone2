@@ -109,20 +109,7 @@ The results column is encoded as :
     docker build --no-cache -t site_spam_predict:1.0 .
     docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
     python test_service.py
-
-## 6. Build and run through Docker
 ```
-    pipenv --python 3.11
-    pipenv install -q scipy
-    pipenv install pandas numpy
-    pipenv install seaborn scikit-learn waitress 
-    pipenv install flask
-    
-    cd src
-    docker build --no-cache -t site_spam_predict:1.0 .
-    docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
-    python test_service.py
-
 
 ## 7. AWS cloud impelemntation
 
