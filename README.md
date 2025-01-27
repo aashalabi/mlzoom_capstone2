@@ -29,7 +29,7 @@ Online trading platforms, such as stock brokerages, cryptocurrency exchanges, an
 
 
 The goal is to use set collected features to predict phishing websites and avoid/minize losses.
-```
+
 
 ## 2. Create environment
 ```
@@ -45,12 +45,11 @@ pip install waitress
 pip install pipenv
 
 
-```
 
 ## 3. Data
 ```
-Data is download from the URL https://archive.ics.uci.edu/dataset/327/phishing+websites
-```
+Data is download from the URL [archive.ics.uci.ed](https://archive.ics.uci.edu/dataset/327/phishing+websites)
+
 
 3.1 Data Features
 ```
@@ -67,7 +66,7 @@ The results column is encoded as :
 |----------------|-----------|
 | Legitimate     | 1         |
 | Phishing       | -1        |
-```
+
 
 ## 4. Notebooks and included files
 ```
@@ -80,7 +79,7 @@ predecit.py: simple load model and predict
 app.py: flask app
 test_service: test the flash app
 Docker file: to create docker image
-```
+
 
 ## 5. Instructions on how to run the project
 ```
@@ -94,7 +93,6 @@ Docker file: to create docker image
 5- Run predict test, open new cmd window , activate the env
    conda activate ml-zoomcamp
    python test_service.py
-```
 
 ## 6. Build and run through Docker
 ```
@@ -109,7 +107,6 @@ docker build --no-cache -t site_spam_predict:1.0 .
 docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
 python test_service.py
 
-```
 
 ## 7. AWS cloud impelemntation
 
@@ -120,15 +117,15 @@ python test_service.py
 ```
 It was suggested to used p4 or p5 protocol when saving the model.
 Execute the following to conver the model to v4 protocol
-
 python p4_bin_convert.py
-```
+
 
 ###
 
 ## 7.3 Detailed AWS implementation and depoloyment
+
 ```
-Check the content of [README_AWS.md]:(README_AWS.md)
+Check the content of [README_AWS.md](README_AWS.md)
 
 
 
