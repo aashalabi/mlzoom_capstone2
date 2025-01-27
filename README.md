@@ -83,18 +83,18 @@ The results column is encoded as :
 
 ## 5. Instructions on how to run the project
 ```
-    1- create the env as in (2)
-    2- activate the environment
-       conda activate ml-zoomcamp
-    3- Clone the repo
-       https://github.com/aashalabi/ml-zoomcamp-project.git
-    4- run flask backend service
-        cd src
-        waitress-serve --port=9696 app:app
-    5- Run predict test, open new cmd window , activate the env
-       conda activate ml-zoomcamp
-       cd src
-       python test_service.py
+1- create the env as in (2)
+2- activate the environment
+   conda activate ml-zoomcamp
+3- Clone the repo
+   https://github.com/aashalabi/ml-zoomcamp-project.git
+4- run flask backend service
+   cd src
+   waitress-serve --port=9696 app:app
+5- Run predict test, open new cmd window , activate the env
+   conda activate ml-zoomcamp
+   cd src
+   python test_service.py
 ```
 
 ## 6. Build and run through Docker
