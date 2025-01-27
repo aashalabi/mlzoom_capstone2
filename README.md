@@ -74,14 +74,22 @@ The results column is encoded as :
 
 ## 4. Notebooks and included files
 ```
-ml_project.ipynb :  contains 
+src:
+    ml_project.ipynb :  contains 
                         - Data preparation and data cleaning
                         - EDA, feature importance analysis
                         - Model selection process and parameter tuning
-train.py: selected model traianing and saving to file
-predecit.py: simple load model and predict
-app.py: flask app
-test_service: test the flash app
+    train.py: selected model traianing and saving to file
+    predecit.py: simple load model and predict
+    app.py: flask app
+    test_service: test the flash app
+data:
+    data file (Training Dataset.arff)
+    Phishing Websites Features.pdf, detailed data fields
+AWS:
+    AWS related implementation files
+Modles:
+    folder of final model    
 Docker file: to create docker image
 ```
 
@@ -109,9 +117,10 @@ pipenv install pandas numpy
 pipenv install seaborn scikit-learn waitress 
 pipenv install flask
 
-cd src
+
 docker build --no-cache -t site_spam_predict:1.0 .
 docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
+cd src
 python test_service.py
 
 ```
@@ -137,5 +146,12 @@ python p4_bin_convert.py
 Check the content of README_AWS.md
 
 ```
+
+## 7.4 Test Lambda function locally
+```
+cd AWS
+python test_lambda.py
+```
+
 
 

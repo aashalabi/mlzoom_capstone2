@@ -6,11 +6,12 @@ RUN pip --no-cache-dir install pipenv
 
 WORKDIR /app
 
-COPY ["Pipfile", "Pipfile.lock", "./"]
+COPY ["src/Pipfile", "src/Pipfile.lock", "./"]
 RUN pipenv install --deploy --system && \
     rm -rf /root/.cache
 
-COPY ["app.py", "spam_website.bin", "./"]
+COPY ["models/spam_website_p4.bin", "./"]
+COPY ["src/app.py", "./"]
 
 EXPOSE 9696
 
