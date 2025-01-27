@@ -70,7 +70,7 @@ The results column is encoded as :
 
 
 ## 4. Notebooks and included files
-
+```
     ml_project.ipynb :  contains <br>
                             - Data preparation and data cleaning
                             - EDA, feature importance analysis                        
@@ -82,7 +82,7 @@ The results column is encoded as :
     Docker file: to create docker image
 
 ## 5. Instructions on how to run the project
-
+```
     1- create the env as in (2)
     2- activate the environment
        conda activate ml-zoomcamp
@@ -98,7 +98,7 @@ The results column is encoded as :
 
 
 ## 6. Build and run through Docker
-
+```
     pipenv --python 3.11
     pipenv install -q scipy
     pipenv install pandas numpy
