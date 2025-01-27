@@ -127,7 +127,7 @@ Docker file: to create docker image
 ## 7.3 Detailed AWS implementation and depoloyment
 
 
-    Check the content of [README_AWS.md](./README_AWS.md)
+    Check the content of [README_AWS.md](README_AWS.md)
 
 
 
