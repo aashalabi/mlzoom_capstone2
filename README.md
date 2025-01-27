@@ -70,10 +70,10 @@ The results column is encoded as :
 
 ## 4. Notebooks and included files
 
-    ml_project.ipynb :  contains 
+    ml_project.ipynb :  contains <br>
                             - Data preparation and data cleaning
-                            - EDA, feature importance analysis
-                            - Model selection process and parameter tuning
+                            - EDA, feature importance analysis                        
+                            - Model selection process and parameter tuning                        
     train.py: selected model traianing and saving to file
     predecit.py: simple load model and predict
     app.py: flask app
@@ -118,9 +118,9 @@ The results column is encoded as :
 
 ## 7.2 Convert binary model to protocol V4
 
-    It was suggested to used p4 or p5 protocol when saving the model.
-    Execute the following to conver the model to v4 protocol
-    python p4_bin_convert.py
+It was suggested to used p4 or p5 protocol when saving the model.<br>
+Execute the following to conver the model to v4 protocol<br>
+python p4_bin_convert.py
 
 
 ## 7.3 Detailed AWS implementation and depoloyment
@@ -129,8 +129,3 @@ The results column is encoded as :
 Check the content of [README_AWS.md](./README_AWS.md)
 
 
-
-
-```python
-
-```
