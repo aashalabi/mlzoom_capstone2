@@ -97,18 +97,18 @@ Docker file: to create docker image
 ```
 
 ## 6. Build and run through Docker
-```
-pipenv --python 3.11
-pipenv install -q scipy
-pipenv install pandas numpy
-pipenv install seaborn scikit-learn waitress 
-pipenv install flask
 
+    pipenv --python 3.11
+    pipenv install -q scipy
+    pipenv install pandas numpy
+    pipenv install seaborn scikit-learn waitress 
+    pipenv install flask
+    
+    
+    docker build --no-cache -t site_spam_predict:1.0 .
+    docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
+    python test_service.py
 
-docker build --no-cache -t site_spam_predict:1.0 .
-docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
-python test_service.py
-```
 
 ## 7. AWS cloud impelemntation
 
@@ -116,19 +116,19 @@ python test_service.py
 ![image-2.png](README_files/image-2.png)
 
 ## 7.2 Convert binary model to protocol V4
-```
-It was suggested to used p4 or p5 protocol when saving the model.
-Execute the following to conver the model to v4 protocol
-python p4_bin_convert.py
-```
+
+    It was suggested to used p4 or p5 protocol when saving the model.
+    Execute the following to conver the model to v4 protocol
+    python p4_bin_convert.py
+
 
 ###
 
 ## 7.3 Detailed AWS implementation and depoloyment
 
-```
-Check the content of [README_AWS.md](README_AWS.md)
 
-```
+    Check the content of [README_AWS.md](./README_AWS.md)
+
+
 
 
