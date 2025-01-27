@@ -47,9 +47,8 @@ pip install pipenv
 
 
 ## 3. Data
-```
+
 Data is download from the URL [archive.ics.uci.ed](https://archive.ics.uci.edu/dataset/327/phishing+websites)
-```
 
 3.1 Data Features
 ```
@@ -70,31 +69,33 @@ The results column is encoded as :
 ```
 
 ## 4. Notebooks and included files
-```
-ml_project.ipynb :  contains 
-                        - Data preparation and data cleaning
-                        - EDA, feature importance analysis
-                        - Model selection process and parameter tuning
-train.py: selected model traianing and saving to file
-predecit.py: simple load model and predict
-app.py: flask app
-test_service: test the flash app
-Docker file: to create docker image
-```
+
+    ml_project.ipynb :  contains 
+                            - Data preparation and data cleaning
+                            - EDA, feature importance analysis
+                            - Model selection process and parameter tuning
+    train.py: selected model traianing and saving to file
+    predecit.py: simple load model and predict
+    app.py: flask app
+    test_service: test the flash app
+    Docker file: to create docker image
+
 
 ## 5. Instructions on how to run the project
-```
-1- create the env as in (2)
-2- activate the environment
-   conda activate ml-zoomcamp
-3- Clone the repo
-   https://github.com/aashalabi/ml-zoomcamp-project.git
-4- run flask backend service
-    waitress-serve --port=9696 app:app
-5- Run predict test, open new cmd window , activate the env
-   conda activate ml-zoomcamp
-   python test_service.py
-```
+
+    1- create the env as in (2)
+    2- activate the environment
+       conda activate ml-zoomcamp
+    3- Clone the repo
+       https://github.com/aashalabi/ml-zoomcamp-project.git
+    4- run flask backend service
+        cd src
+        waitress-serve --port=9696 app:app
+    5- Run predict test, open new cmd window , activate the env
+       conda activate ml-zoomcamp
+       cd src
+       python test_service.py
+
 
 ## 6. Build and run through Docker
 
@@ -104,7 +105,7 @@ Docker file: to create docker image
     pipenv install seaborn scikit-learn waitress 
     pipenv install flask
     
-    
+    cd src
     docker build --no-cache -t site_spam_predict:1.0 .
     docker run -d -p 9696:9696 --name site_spam_predict site_spam_predict:1.0
     python test_service.py
@@ -122,18 +123,13 @@ Docker file: to create docker image
     python p4_bin_convert.py
 
 
-###
-
 ## 7.3 Detailed AWS implementation and depoloyment
 
 
-    Check the content of [README_AWS.md](README_AWS.md)
+Check the content of [README_AWS.md](./README_AWS.md)
 
 
-## 7.3 Detailed AWS implementation and depoloyment
 
-
-    Check the content of [README_AWS.md](README_AWS.md)
 
 ```python
 
