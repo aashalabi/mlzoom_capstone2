@@ -1,8 +1,25 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.16.6
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
 # Zoomcamp ML project
+
 
 ## Website phishing and scam prediction
 
-![website_phishing.png](README_files/website_phishing.png)
+
+![website_phishing.png](attachment:website_phishing.png)
+
 
 ## 1. Description of the problem
 ```
@@ -31,6 +48,7 @@ Online trading platforms, such as stock brokerages, cryptocurrency exchanges, an
 The goal is to use set collected features to predict phishing websites and avoid/minize losses.
 ```
 
+
 ## 2. Create environment
 ```
 conda create --name ml-zoomcamp python=3.11.10
@@ -46,9 +64,11 @@ pip install pipenv
 ```
 
 
+
 ## 3. Data
 
     Data is download from the URL [archive.ics.uci.ed](https://archive.ics.uci.edu/dataset/327/phishing+websites)
+
 
 
 ### 3.1 Data Features
@@ -69,6 +89,7 @@ The results column is encoded as :
 
 ```
 
+
 ## 4. Notebooks and included files
 ```
     ml_project.ipynb :  contains <br>
@@ -80,6 +101,7 @@ The results column is encoded as :
     app.py: flask app
     test_service: test the flash app
     Docker file: to create docker image
+
 
 ## 5. Instructions on how to run the project
 ```
@@ -97,7 +119,9 @@ The results column is encoded as :
        python test_service.py
 ```
 
+
 ## 6. Build and run through Docker
+
 
 ```
     pipenv --python 3.11
@@ -112,10 +136,13 @@ The results column is encoded as :
     python test_service.py
 ```
 
+
 ## 7. AWS cloud impelemntation
 
+
 ## 7.1 Architecure
-![image-2.png](README_files/image-2.png)
+![image-2.png](attachment:image-2.png)
+
 
 ## 7.2 Convert binary model to protocol V4
 
@@ -124,9 +151,11 @@ Execute the following to conver the model to v4 protocol<br>
 python p4_bin_convert.py
 
 
+<!-- #region -->
 ## 7.3 Detailed AWS implementation and depoloyment
 
 
 Check the content of [README_AWS.md](./README_AWS.md)
 
 
+<!-- #endregion -->
