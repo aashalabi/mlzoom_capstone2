@@ -129,7 +129,7 @@ python p4_bin_convert.py
 
 ## 7.3 Detailed AWS implementation and depoloyment
 ```
-Check the content of README_AWS.md
+Check the content of [README_AWS.md](https://github.com/aashalabi/mlzoom_capstone2/blob/main/README_AWS.md)
 
 ```
 
