@@ -74,6 +74,7 @@ The results column is encoded as :
 </p>
 
 ## 4. Notebooks and included files
+<p>
 <pre>
 src:  
     ml_project.ipynb :  contains 
@@ -93,6 +94,7 @@ Modles:
     folder of final model      
 Docker file: to create docker image  
 </pre>
+</p>
 
 ## 5. Instructions on how to run the project locally
 ```
