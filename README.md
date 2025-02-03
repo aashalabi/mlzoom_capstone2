@@ -55,10 +55,13 @@ Data is download from the URL https://archive.ics.uci.edu/dataset/327/phishing+w
 <p>
 
 ## 3.1 Data Features
-<p>
-All data fields are described in data\Phishing Websites Features.pdf  
 
+All data fields are described in [Phishing_Websites_Features](data\Phishing_Websites_Features.pdf)  
+
+
+<p>
 All features are encoded as follows:  
+
 | **Category**   | **Value** |
 |----------------|-----------|
 | Legitimate     | 1         |
