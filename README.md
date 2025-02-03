@@ -6,30 +6,30 @@
 
 ## 1. Description of the problem
 <p>
-Website phishing is a form of cyberattack where malicious actors create a fraudulent website that mimics a legitimate one. The goal is to deceive users into revealing sensitive information, such as:
-Login credentials,Credit card details, Personal identification data (e.g., Social Security numbers), Account details for financial systems
+Website phishing is a form of cyberattack where malicious actors create a fraudulent website that mimics a legitimate one. The goal is to deceive users into revealing sensitive information, such as:  
+Login credentials,Credit card details, Personal identification data (e.g., Social Security numbers), Account details for financial systems  
 
-These fake websites often closely resemble the appearance and URL of a trusted site, making it difficult for users to distinguish between the legitimate and malicious versions.
+These fake websites often closely resemble the appearance and URL of a trusted site, making it difficult for users to distinguish between the legitimate and malicious versions.  
 
-Techniques Used in Website Phishing
-Spoofed URLs: Cybercriminals use URLs similar to legitimate websites (e.g., using "g00gle.com" instead of "google.com").
-Email Phishing: Victims are lured through emails containing links to the phishing site.
-Clone Websites: Replicas of legitimate websites with subtle differences.
-SSL Certificates: Phishing sites might also use HTTPS to appear more authentic.
-Pop-up Forms:Fake login or payment forms embedded in legitimate-looking sites.
+Techniques Used in Website Phishing  
+Spoofed URLs: Cybercriminals use URLs similar to legitimate websites (e.g., using "g00gle.com" instead of "google.com").  
+Email Phishing: Victims are lured through emails containing links to the phishing site.  
+Clone Websites: Replicas of legitimate websites with subtle differences.  
+SSL Certificates: Phishing sites might also use HTTPS to appear more authentic.  
+Pop-up Forms:Fake login or payment forms embedded in legitimate-looking sites.  
 
-How Website Phishing Affects Online Trading
+How Website Phishing Affects Online Trading  
 Online trading platforms, such as stock brokerages, cryptocurrency exchanges, and e-commerce websites, are frequent targets of phishing attacks. The impact includes:
-1. Loss of Sensitive Information
-2. Theft of Funds
-3. Compromised Reputation
-4. Fraudulent Trades and Market Manipulation
-5. Identity Theft
-6. Loss of Business Opportunities
+1. Loss of Sensitive Information  
+2. Theft of Funds  
+3. Compromised Reputation  
+4. Fraudulent Trades and Market Manipulation  
+5. Identity Theft  
+6. Loss of Business Opportunities  
+  
 
-
-The goal is to use set collected features to predict phishing websites and avoid/minize losses.
-<p>
+The goal is to use set collected features to predict phishing websites and avoid/minize losses.  
+</p>
 
 ## 2. Create environment
 ```
