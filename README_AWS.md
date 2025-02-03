@@ -3,9 +3,13 @@
 <p>
 We will test lambda function in development environment before porting to AWS
 Build docker image in local environment 
-
-docker build -f Dockerfile_lambda -t spam-classifier-lambda:py311 .
 </p>
+
+
+```
+cd AWS
+docker build -f Dockerfile_lambda -t spam-classifier-lambda:py311 .
+```
 
 ### Run Docker Image
 ```
@@ -20,14 +24,16 @@ python test_lambda_docker.py
 
 ```
 
-
-```python
-#test docker and lmabda service
-!python test_lambda_docker.py
-```
-
-    python: can't open file 'D:\\code\\Zoomcamps\\mlzoom_capstone2\\test_lambda_docker.py': [Errno 2] No such file or directory
-    
+<pre>
+{
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "body": "{\"Spam_probability\": 0.9996296296296296, \"Spam\": true}"
+}
+</pre>
 
 # AWS cloud deployment
 ### Deploy to AWS Lambda as container
