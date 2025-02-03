@@ -3,11 +3,7 @@ import numpy as np
 
 import seaborn as sns
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.tree import export_text
 from sklearn.feature_extraction import DictVectorizer
-from sklearn.metrics import roc_auc_score
-from sklearn.tree import export_text
 from sklearn.ensemble import RandomForestClassifier
 
 from scipy.io import arff
