@@ -74,9 +74,9 @@ The results column is encoded as :
 </p>
 
 ## 4. Notebooks and included files
-<p>
+<pre>
 src:  
-    ml_project.ipynb :  contains   
+    ml_project.ipynb :  contains 
                         - Data preparation and data cleaning  
                         - EDA, feature importance analysis  
                         - Model selection process and parameter tuning  
@@ -92,7 +92,7 @@ AWS:
 Modles:  
     folder of final model      
 Docker file: to create docker image  
-</p>
+</pre>
 
 ## 5. Instructions on how to run the project locally
 ```
