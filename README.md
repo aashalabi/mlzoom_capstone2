@@ -5,7 +5,7 @@
 ![website_phishing.png](README_files/website_phishing.png)
 
 ## 1. Description of the problem
-```
+<p>
 Website phishing is a form of cyberattack where malicious actors create a fraudulent website that mimics a legitimate one. The goal is to deceive users into revealing sensitive information, such as:
 Login credentials,Credit card details, Personal identification data (e.g., Social Security numbers), Account details for financial systems
 
@@ -29,7 +29,7 @@ Online trading platforms, such as stock brokerages, cryptocurrency exchanges, an
 
 
 The goal is to use set collected features to predict phishing websites and avoid/minize losses.
-```
+<p>
 
 ## 2. Create environment
 ```
