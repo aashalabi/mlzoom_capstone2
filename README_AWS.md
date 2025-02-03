@@ -1,16 +1,16 @@
 # Local Development
 ### Docker build
-```
+<p>
 We will test lambda function in development environment before porting to AWS
 Build docker image in local environment 
 
 docker build -f Dockerfile_lambda -t spam-classifier-lambda:py311 .
-```
+</p>
 
 ### Run Docker Image
-
+```
 docker run -d -p 9696:8080 --name spam-classifier-lambda spam-classifier-lambda:py311
-
+```
 
 ### Test Lambda in Docker Container
 
@@ -26,14 +26,7 @@ python test_lambda_docker.py
 !python test_lambda_docker.py
 ```
 
-    {
-      "statusCode": 200,
-      "headers": {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "body": "{\"Spam_probability\": 0.9996296296296296, \"Spam\": true}"
-    }
+    python: can't open file 'D:\\code\\Zoomcamps\\mlzoom_capstone2\\test_lambda_docker.py': [Errno 2] No such file or directory
     
 
 # AWS cloud deployment
@@ -102,9 +95,9 @@ docker build -f Dockerfile_lambda -t spam-classifier-images .
 ### AWS Lambda function
 
 ### Create Lambda function
-```
+
 Use the image uri to create lambda function from a container
-```
+
 ![repo_uri.png](README_AWS_files/repo_uri.png)
 
 ### Lambda function configuration
@@ -167,26 +160,21 @@ https://www.youtube.com/watch?v=nZU9_2bTNTM&ab_channel=MyCloudTutorials
 ![api_deploy_public.png](README_AWS_files/api_deploy_public.png)
 
 ###  Test public API
-```
+<p>
 open test_lambda_gateway.py
-replace url with the <<invoke url>> from deploy api.
-run:  python test_lambda_gateway.py
 
-```
+replace url with the <<invoke url>> from deploy api.
+
+run:  python test_lambda_gateway.py
+</p>
+
 
 
 ```python
 !python test_lambda_gateway.py
 ```
 
-    {
-      "statusCode": 200,
-      "headers": {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "body": "{\"Spam_probability\": 0.9996296296296296, \"Spam\": true}"
-    }
+    python: can't open file 'D:\\code\\Zoomcamps\\mlzoom_capstone2\\test_lambda_gateway.py': [Errno 2] No such file or directory
     
 
 
