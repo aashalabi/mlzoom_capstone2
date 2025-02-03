@@ -29,7 +29,7 @@ def ping():
     customer = request.get_json()
 
     prediction = predict_spam(customer, dv, model)
-    spam = prediction >= 0.5
+    spam = prediction < 0.5
     
     result = {
         'Spam_probability': float(prediction),
