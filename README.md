@@ -19,7 +19,8 @@ SSL Certificates: Phishing sites might also use HTTPS to appear more authentic.
 Pop-up Forms:Fake login or payment forms embedded in legitimate-looking sites.  
 
 How Website Phishing Affects Online Trading  
-Online trading platforms, such as stock brokerages, cryptocurrency exchanges, and e-commerce websites, are frequent targets of phishing attacks. The impact includes:
+Online trading platforms, such as stock brokerages, cryptocurrency exchanges, and e-commerce websites, are frequent targets of phishing attacks.  
+The impact includes:  
 1. Loss of Sensitive Information  
 2. Theft of Funds  
 3. Compromised Reputation  
@@ -55,43 +56,43 @@ Data is download from the URL https://archive.ics.uci.edu/dataset/327/phishing+w
 
 ## 3.1 Data Features
 <p>
-All data fields are described in data\Phishing Websites Features.pdf
+All data fields are described in data\Phishing Websites Features.pdf  
 
-All features are encoded as follows:
+All features are encoded as follows:  
 | **Category**   | **Value** |
 |----------------|-----------|
 | Legitimate     | 1         |
 | Suspicious     | 0         |
 | Phishing       | -1        |
 
-The results column is encoded as :
+The results column is encoded as :  
 | **Category**   | **Value** |
 |----------------|-----------|
 | Legitimate     | 1         |
 | Phishing       | -1        |
 
-<p>
+</p>
 
 ## 4. Notebooks and included files
 <p>
-src:
-    ml_project.ipynb :  contains 
-                        - Data preparation and data cleaning
-                        - EDA, feature importance analysis
-                        - Model selection process and parameter tuning
-    train.py: selected model traianing and saving to file
-    predecit.py: simple load model and predict
-    app.py: flask app
-    test_service: test the flash app
-data:
-    data file (Training Dataset.arff)
-    Phishing Websites Features.pdf, detailed data fields
-AWS:
-    AWS related implementation files
-Modles:
-    folder of final model    
-Docker file: to create docker image
-<p>
+src:  
+    ml_project.ipynb :  contains   
+                        - Data preparation and data cleaning  
+                        - EDA, feature importance analysis  
+                        - Model selection process and parameter tuning  
+    train.py: selected model traianing and saving to file  
+    predecit.py: simple load model and predict  
+    app.py: flask app  
+    test_service: test the flash app  
+data:  
+    data file (Training Dataset.arff)  
+    Phishing Websites Features.pdf, detailed data fields  
+AWS:  
+    AWS related implementation files  
+Modles:  
+    folder of final model      
+Docker file: to create docker image  
+</p>
 
 ## 5. Instructions on how to run the project locally
 ```
@@ -132,9 +133,9 @@ python test_service.py
 
 ## 7.2 Convert binary model to protocol V4
 <p>
-It was suggested to used p4 or p5 protocol when saving the model.
-Execute the following to conver the model to v4 protocol
-
+It was suggested to used p4 or p5 protocol when saving the model.  
+Execute the following to conver the model to v4 protocol  
+</p>
 
 ```
 python p4_bin_convert.py
@@ -143,10 +144,10 @@ python p4_bin_convert.py
 ###
 
 ## 7.3 Detailed AWS implementation and depoloyment
-<p>
+
 Check the content of [README_AWS.md](README_AWS.md)
 
-<p>
+
 
 ## 7.4 Test Lambda function locally
 ```
