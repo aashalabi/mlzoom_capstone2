@@ -76,6 +76,43 @@ The results column is encoded as :
 
 </p>
 
+<p>
+
+| **Feature**                       | **Description** |
+|-----------------------------------|-------------|
+| Having IP Address                 | Checks if the URL contains an IP address instead of a domain name. |
+| URL Length                        | Measures the length of the URL. |
+| Shortening Service                | Checks if the URL uses a URL shortening service (e.g., bit.ly, tinyurl). |
+| Having '@' Symbol                 | Determines if the URL contains the '@' symbol, which can be used to trick users. |
+| Double Slash Redirecting          | Assesses if the "//" appears in an unexpected place in the URL. |
+| Prefix Suffix                     | Checks for a hyphen in the domain name, often used in phishing sites. |
+| Having Sub Domain                 | Evaluates the number of subdomains in the URL. More subdomains may indicate phishing. |
+| SSL Final State                   | Checks if the website uses a valid SSL certificate (e.g., HTTPS, trusted CA). |
+| Domain Registration Length        | Measures the duration for which the domain is registered. Shorter durations may indicate phishing. |
+| Favicon                           | Determines if the favicon is loaded from an external domain. |
+| Port                              | Identifies if non-standard ports are used (e.g., 8080, 443). |
+| HTTPS Token                       | Checks if 'https' appears within the domain name itself. |
+| Request URL                       | Evaluates if website resources (images, scripts) are loaded from external domains. |
+| URL of Anchor                     | Assesses whether anchor links point to different domains, which may indicate phishing. |
+| Links in Meta, Script, and Link Tags | Checks for external links inside meta, script, and link tags. |
+| Server Form Handler (SFH)         | Checks if form actions point to an external, potentially malicious domain. |
+| Submitting to Email               | Determines if form submissions go directly to an email instead of a web server. |
+| Abnormal URL                      | Checks if the URL does not match the expected website domain. |
+| Website Forwarding                | Counts how many times the website redirects. Multiple redirects may indicate phishing. |
+| Status Bar Customization          | Checks if the website modifies the browser’s status bar, often used for deception. |
+| Disabling Right Click             | Determines if right-click functionality is disabled, which is common in phishing sites. |
+| Using Pop-up Window               | Identifies the presence of pop-ups, which may be used for phishing attacks. |
+| Iframe Redirection                | Checks if the website uses iframe tags, which can hide malicious content. |
+| Age of Domain                     | Measures how long the domain has existed. New domains are more likely to be phishing sites. |
+| DNS Record                        | Checks if a valid DNS record exists for the domain. |
+| Web Traffic                       | Assesses the site's Alexa rank. Higher rank means more legitimate traffic. |
+| Page Rank                         | Evaluates the website’s search engine page rank. |
+| Google Index                      | Determines if the website is indexed by Google. |
+| Number of Links Pointing to Page  | Counts how many external websites link to this page. |
+| Statistical Report                | Checks if the domain appears in phishing or spam databases. |
+
+</p>
+
 ## 4. Notebooks and included files
 <p>
 <pre>
