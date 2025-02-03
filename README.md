@@ -190,7 +190,6 @@ python p4_bin_convert.py
 Check the content of [README_AWS.md](README_AWS.md)
 
 
-
 ## 7.4 Test Lambda function locally
 ```
 cd AWS
