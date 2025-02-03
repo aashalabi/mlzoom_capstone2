@@ -169,18 +169,25 @@ https://www.youtube.com/watch?v=nZU9_2bTNTM&ab_channel=MyCloudTutorials
 <p>
 open test_lambda_gateway.py
 
-replace url with the <<invoke url>> from deploy api.
+replace url with the invoke url from deploy api.
 
 run:  python test_lambda_gateway.py
 </p>
 
 
-
-```python
-!python test_lambda_gateway.py
+```
+python test_lambda_gateway.py
 ```
 
-    python: can't open file 'D:\\code\\Zoomcamps\\mlzoom_capstone2\\test_lambda_gateway.py': [Errno 2] No such file or directory
-    
+<pre>
+{
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "body": "{\"Spam_probability\": 0.9996296296296296, \"Spam\": true}"
+}
+</pre>
 
 
